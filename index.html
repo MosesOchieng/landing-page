@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+
+    <title>Investa Farm</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="Team/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="Team/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="Team/css/responsive.css" rel="stylesheet" />
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 10px;
+    }
+    
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+  </style>
+  <style>
+    #newsletter-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    #newsletter-popup-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    #newsletter-popup-content {
+        text-align: center;
+    }
+
+    #newsletter-popup-content h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #newsletter-popup-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #newsletter-popup-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    #newsletter-popup-button-subscribe {
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #newsletter-popup-button-exit {
+        background-color: #f44336;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+    <style>
+      .cookie-banner {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: #eee;
+          padding: 20px;
+          text-align: center;
+      }
+
+      .cookie-banner button {
+          padding: 10px 20px;
+          background: #66BB6A;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+  </style>
+<style>
+  .learn-more-btn {
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .circle h4 {
+    margin-top: 10px;
+    
+  }
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-media-icons a {
+    margin: 0 5px;
+    color: #333;
+    font-size: 18px;
+  }
+</style>
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="bootstrap.min.css" rel="stylesheet">
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+            <!-- Libraries Stylesheet -->
+            <link href="co/lib/animate/animate.min.css" rel="stylesheet">
+            <link href="co/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<script>
+
+    const navbar = document.getElementById('navbar');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) { // Hide navbar when scrolled past 100px
+        navbar.classList.add('hidden');
+      } else {
+        navbar.classList.remove('hidden'); // Show navbar when scrolled back up
+      }
+    });
+  
+</script>
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      
+      .download-btn i {
+        font-size: 20px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      
+
+      #team i {
+        font-size: 12px;
+        color: black;
+    }
+
+    #team p {
+        font-weight: 100;
+    }
+
+    #team .card {
+        border-radius: 0;
+        height: 40px;
+        box-shadow: 5px 5px 15px lightgreen;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+    }
+
+    #team .card:hover {
+        background: lightgreen;
+        color: #fff;
+        border-radius: 2px;
+        border: none;
+        box-shadow: 5px 5px 10px #9e9e9e;
+    }
+
+    #team .card:hover h3,
+    #team .card:hover i {
+        color: #fff;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light-gradient opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="d-inline-block align-top img-fluid" src="assets/img/gallery/m.png" alt="" width="40%" height="100" /><span class="text-theme font-monospace fs-4 ps-2"></span></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#header">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="Pages/about.html">Farmers</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="IFarm/index.html">Crypto Lenders</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#team">Investa Team</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="Pages/Partners.html">Partners</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="Pages/contact.html">Contacts</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="https://investafarm-eth-register.vercel.app/">Register Farmer </a></li>
+            </ul>
+            <form class="d-flex" action="https://investafarm-eth-register.vercel.app/">
+              <button class="btn btn-lg btn-dark bg-gradient order-0" type="submit">Invest Crypto.</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
+      <section class="py-0" id="header">
+        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero-header.png);background-position:right top;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder d-md-none" style="background-image:url(assets/img/illustrations/hero-bg.png);background-position:right top;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-lg-100">
+            <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center">
+              <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6"><br class="d-block d-lg-block" />Crypto & Crops in  Blockchain Harvest! 🌾</h1>
+              <p class="mb-4 fs-1">Dive into a world where digital currencies and farmers unite for a bumper crop of financial growth. Whether you're cultivating crypto or sowing seeds, we've got the perfect blend of DeFi and green thumbs to make your investment blossom.</p>
+              <a class="btn btn-lg btn-success" href="https://investafarm-eth-register.vercel.app/" role="button">Register as Farmer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" id="Opportuanities">
+        <div class="bg-holder d-none d-sm-block" style="background-image:url(assets/img/illustrations/bg.png);background-position:top left;background-size:225px 755px;margin-top:-17.5rem;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 mx-auto text-center mb-3">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">New Opportunities For Farmers</h5>
+              <p class="mb-5">🔄 Embracing a value chain approach at Investa Farm means we're with you every step of the agricultural journey. 🚜 From seed to harvest, our platform links farmers directly with resources and lenders, ensuring a seamless and efficient process. 🌱 </p>
+            </div>
+          </div>
+          <div class="row flex-center h-100">
+            <div class="col-xl-9">
+              <div class="row">
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
+                    <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/farmer.svg" height="60" alt="" />
+                      <div class="card-body">
+                        <h6 class="fw-bold fs-1 heading-color">Easy Loans for Farming</h6>
+                  
+                        <p class="mt-3 mb-md-0 mb-lg-2">Get hassle-free loans for farming needs. No complicated processes, just straightforward support for your agriculture.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
+                    <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/growth.svg" height="60" alt="" />
+                      <div class="card-body">
+                        <h6 class="fw-bold fs-1 heading-color">Global financial access for Local Farms</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-2">Connect with crypto lenders worldwide.Finance your farmers with affordable capital.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
+                    <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/planting.svg" height="60" alt="" />
+                      <div class="card-body">
+                        <h6 class="fw-bold fs-1 heading-color">More Profit, Less Hassle</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-2">Access affordable funds to boost your farm's productivity. Skip the long waits and high-interest rates with our farmer-friendly approach.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ <a href="service.html">
+      <button class="learn-more-btn" style="position: relative;left:46%;" style="background-color: #66BB6A;">Learn More</button>
+    </a>
+<br>
+      <!-- ============================================-->
+      <section class="service section bg-gray" style="background-color: #66BB6A;">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2 style="text-align: center;color:white;" >Investa Farm Mobile App</h2>
+                <p style="text-align: center;color:white;"> makes
+                  it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 align-self-center">
+              <!-- Feature Image -->
+              <div class="service-thumb left" data-aos="fade-right">
+                <center>
+                <img class="img-fluid" src="assets/img/gallery/kj.png" alt="iphone-ipad" style="height: 600px; width:300px;">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" class="download-btn">
+                  <i class="fab fa-google-play"></i>
+                  Download on Google Play
+                </a>
+              
+                
+                
+              </center>
+         
+              </div>
+            </div>
+            <div class="col-lg-5 mr-auto align-self-center">
+              <div class="service-box">
+                <div class="row align-items-center">
+                  <div class="col-md-6 col-xs-12">
+                    <!-- Service 01 -->
+                    <div class="service-item">
+                      <!-- Icon -->
+                      <i class="ti-bookmark"></i>
+                      <!-- Heading -->
+                      <h3 style="color: white;"> Crypto Loans:</h3>
+                      <!-- Description -->
+                      <p style="color: white;">Through our app, farmers who might be excluded from traditional financial systems gain access to a global pool of lenders. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <!-- Service 01 -->
+                    <div class="service-item">
+                      <!-- Icon -->
+                      <i class="ti-pulse"></i>
+                      <!-- Heading -->
+                      <h3 style="color: white;">Easy Capital:</h3>
+                      <!-- Description -->
+                      <p style="color: white;">The mobile application provides farmers with a hassle-free way to access affordable capital for their agricultural activities. 
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <!-- Service 01 -->
+                    <div class="service-item">
+                      <!-- Icon -->
+                      <i class="ti-bar-chart"></i>
+                      <!-- Heading -->
+                      <h3 style="color: white;">Stable Returns:</h3>
+                      <!-- Description -->
+                      <p style="color: white;">Our mobile app enables crypto holders to lend directly to farmers, earning stable returns on their cryptocurrency holdings.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <!-- Service 01 -->
+                    <div class="service-item">
+                      <!-- Icon -->
+                      <i class="ti-panel"></i>
+                      <!-- Heading -->
+                      <h3 style="color: white;">Transparent  :</h3>
+                      <!-- Description -->
+                      <p style="color: white;">Investors can access a transparent platform that provides detailed information about agricultural projects. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section> begin ============================-->
+      <section class="py-5" id="invest">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-9 mb-3">
+              <div class="row">
+                <div class="col-lg-9 mb-3">
+                  <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Cryptocurrency Lenders Have a Choice !</h5>
+                  <p class="mb-5">Tap into the lucrative world of agricultural financing by joining Investa Farm, a decentralized platform that connects crypto lenders with farmers seeking loans.
+                     Experience the potential for high returns while supporting sustainable farming practices.
+
+                   </p>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <div class="card text-white"><img class="card-img" src="assets/img/gallery/l.jpg" alt="..." />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center px-5 px-md-3 px-lg-5 bg-dark-gradient">
+                      <h6 class="text-success pt-2">NEW FARM TODAY</h6>
+                      <hr class="text-white" style="height:0.12rem;width:2.813rem" />
+                      <div class="pt-lg-3">
+                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50">Earn Attractive Returns</h6>
+                        <p class="w-xxl-75">Generate consistent returns with interest rates ranging from 4.5% to 6.0%, backed by real-world agricultural assets.</p>
+                        <button class="btn btn-lg btn-light text-success" type="button">Browse Investa Farm Farm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <div class="card text-white"><img class="card-img" src="assets/img/gallery/k.jpg" alt="..." />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center px-5 px-md-3 px-lg-5 bg-light-gradient">
+                      <h6 class="text-success pt-2">FULLY FUNDED</h6>
+                      <hr class="text-white" style="height:0.12rem;width:2.813rem" />
+                      <div class="pt-lg-3">
+                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50">Reduced Risks on Investment</h6>
+                        <p class="w-xxl-75">Benefit from InvestaFarm's rigorous risk assessment and mitigation strategies, ensuring the safety of your investments..</p>
+                        <button class="btn btn-lg btn-light text-success" type="button">Browse Investa Farm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-0">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/how-it-works.png);background-position:center bottom;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-9 col-xl-5 text-center pt-8">
+              <h5 class="fw-bold fs-3 fs-xxl-5 lh-sm mb-3 text-white">How it works for farmer</h5>
+              <p class="mb-5 text-white">Follow through this steps if you are a farming group to create your own DAO.</p>
+            </div>
+            <div class="col-sm-9 col-md-12 col-xxl-9">
+              <div class="theme-tab">
+                <ul class="nav justify-content-between">
+                  <li class="nav-item" role="presentation"><a class="nav-link active fw-semi-bold" href="#bootstrap-tab1" data-bs-toggle="tab" data-bs-target="#tab1" id="tab-1"><span class="nav-item-circle-parent"><span class="nav-item-circle">01</span></span></a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link fw-semi-bold" href="#bootstrap-tab2" data-bs-toggle="tab" data-bs-target="#tab2" id="tab-2"><span class="nav-item-circle-parent"><span class="nav-item-circle">02</span></span></a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link fw-semi-bold" href="#bootstrap-tab3" data-bs-toggle="tab" data-bs-target="#tab3" id="tab-3"><span class="nav-item-circle-parent"><span class="nav-item-circle">03</span></span></a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link fw-semi-bold" href="#bootstrap-tab4" data-bs-toggle="tab" data-bs-target="#tab4" id="tab-4"><span class="nav-item-circle-parent"><span class="nav-item-circle">04</span></span></a></li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+                    <div class="row align-items-center my-6 mx-auto">
+                      <div class="col-md-6 col-lg-5 offset-md-1">
+                        <h3 class="fw-bold lh-base text-white">Click Register as Farmer and connect your metamask wallet</h3>
+                      </div>
+                      <div class="col-md-5 text-white offset-lg-1">
+                        <p class="mb-0">You will be redirected to a Login Page where you can register as a Farmer or Login if you have an Account.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2"> 
+                    <div class="row align-items-center my-6 mx-auto">
+                      <div class="col-md-6 col-lg-5 offset-md-1">
+                        <h3 class="fw-bold lh-base text-white">Fill in Details.</h3>
+                      </div>
+                      <div class="col-md-5 text-white offset-lg-1">
+                        <p class="mb-0">Add your wallet addresses and other details to create your farm DAO after connecting to a metamask account.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+                    <div class="row align-items-center my-6 mx-auto">
+                      <div class="col-md-6 col-lg-5 offset-md-1">
+                        <h3 class="fw-bold lh-base text-white">You will be redirected to a Market Place once your DAO is created.</h3>
+                      </div>
+                      <div class="col-md-5 text-white offset-lg-1">
+                        <p class="mb-0">It will appear at the Bottom of the Market Place.Wait for Approval from the team before you can start receiving loans.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+                    <div class="row align-items-center my-6 mx-auto">
+                      <div class="col-md-6 col-lg-5 offset-md-1">
+                        <h3 class="fw-bold lh-base text-white">After approval you will be able to receive your loan amount.</h3>
+                      </div>
+                      <div class="col-md-5 text-white offset-lg-1">
+                        <p class="mb-0">This funds can be retrieved after your are completely funded.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================-->
+      
+
+                    
+     
+        <!-- Most Populer News Start -->
+        <div class="container-fluid populer-news py-5">
+          <div class="container py-5">
+              <div class="tab-class mb-4">
+                  <div class="row g-4">
+                      <div class="col-lg-8 col-xl-9">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between border-bottom mb-4">
+                              <h1 class="mb-4">What’s New</h1>
+                              <ul class="nav nav-pills d-inline-flex text-center">
+                                  <li class="nav-item mb-3" >
+                                      <a style="background-color: green;" class="d-flex py-2  rounded-pill active me-2" data-bs-toggle="pill" href="#News" style="background-color: green;">
+                                          <span class="text-dark" style="width: 100px;">News</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item mb-3" >
+                                      <a style="background-color: green;" class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#IFarm" style="background-color: green;">
+                                          <span class="text-dark" style="width: 100px;" style="background-color: green;color:#fff;" >IFarm Token</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item mb-3"  >
+                                      <a style="background-color: green;" class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#Partners">
+                                          <span class="text-dark" style="width: 100px;" style="background-color: green;" >Partnership</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item mb-3" >
+                                      <a style="background-color: green;" class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#Farmers">
+                                          <span class="text-dark" style="width: 100px;" style="background-color: green;" >Farmers</span>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item mb-3">
+                                      <a style="background-color: green;" class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#Lenders">
+                                          <span class="text-dark" style="width: 100px;">Lenders</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="tab-content mb-4" id="News">
+                              <div id="tab-1" class="tab-pane fade show p-0 active">
+                                  <div class="row g-4">
+                                      <div class="col-lg-8">
+                                          <div class="position-relative rounded overflow-hidden">
+                                              <img src="assets/img/gallery/gi.jpeg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                              <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                  News
+                                              </div>
+                                          </div>
+                                          <div class="my-4">
+                                              <a href="#" class="h4">We have been selected for MEST Regional Finals.</a>
+                                          </div>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                              <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                          </div>
+                                          <p class="my-4">Investa Farm, a sustainable agriculture company based in Nairobi, has been selected for the MEST Regional Finals. MEST is a pan-African entrepreneurial training program and incubator that helps African entrepreneurs build and scale their businesses.
+
+                                            Investa Farm was selected for the MEST Regional Finals based on its innovative business model, its potential to create a positive impact on the environment and the community, and its strong track record of success.
+                                            
+                                            The MEST Regional Finals will take place in Virtually on 11th December 2023. Investa Farm will be competing against startups from across Africa for the chance to win a place in the MEST Africa program.
+                                            
+                                         
+                                          </p>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <div class="row g-4">
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/cindy.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Welcome Cynthia Kamau</p>
+                                                              <a href="#" class="h6">Cynthia Kamau joins Investa Farm Team as Community Manager.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/k.jpeg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Investa Farm wins PLP & Ygap Business Bootcamp</p>
+                                                              <a href="#" class="h6">Investa Farm has won Ygap & PLP Business Bootcamp Demo Day.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/q.jpeg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Ygap X PLP Bootcamp</p>
+                                                              <a href="#" class="h6">Investa Farm participated in the Ygap & PLP Business Bootcamp training.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="row g-4 align-items-center">
+                                                    <div class="col-5">
+                                                        <div class="overflow-hidden rounded">
+                                                            <img src="assets/img/gallery/F67koi3XcAAr6HM.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="features-content d-flex flex-column">
+                                                            <p class="text-uppercase mb-2">Investa Farm CTO & CEO meet Aragon & Polygon Team</p>
+                                                            <a href="#" class="h6">Investa Farm won the Aragon  Bounty in Eth Safari.</a>
+                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/WhatsApp Image 2023-12-04 at 01.52.46.jpeg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Meeting  Co-Founder Polygon</p>
+                                                              <a href="#" class="h6">Our team had a great time meeting Co-Founder Polygon in Kilifi.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/l (3).jpeg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Investa Farm Meets Farmers at Startup Zetech Exhibition</p>
+                                                              <a href="#" class="h6">Investa Farm was part of this years Zetech University Startup Exhibition connecting with Farmers and crypto lenders.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div  class="tab-pane fade show p-0" id="IFarm">
+                                  <div class="row g-4">
+                                      <div class="col-lg-8">
+                                          <div class="position-relative rounded overflow-hidden">
+                                              <img src="assets/img/gallery/IFarm.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                              <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                 IFarm token
+                                              </div>
+                                          </div>
+                                          <div class="my-3">
+                                              <a href="#" class="h4">IFarm Token is set for release early next Year.</a>
+                                          </div>
+                                          <p class="mt-4">Investa Farm IFarm Token is set for release early next year providing a new door way for even better opportunities for cryptocurrencies users and Farmers seeking to grow their wealth.
+                                          </p>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                              <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <div class="row g-4">
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/o.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">IFarm Token colleteral</p>
+                                                              <a href="#" class="h6">IFarm will act as colleteral for most of the loans offered through the platform.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/coins.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">IFarm token</p>
+                                                              <a href="#" class="h6">Users will be rewarded through IFarm token enabling them to borrwo more.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                                  </div>
+                                                  </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/interest.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">IFarm token staking</p>
+                                                              <a href="#" class="h6">Users will be allowed to stake IFarm token to provide limitless opportunities.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div  class="tab-pane fade show p-0" id="Partners">
+                                  <div class="row g-4">
+                                      <div class="col-lg-8">
+                                          <div class="position-relative rounded overflow-hidden">
+                                              <img src="assets/img/gallery/35.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                              <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                  Partnerships
+                                              </div>
+                                          </div>
+                                          <div class="my-3">
+                                              <a href="#" class="h4">Connecting your Agribusiness to Farmers .</a>
+                                          </div>
+                                          <p class="mt-4">Are you an Agribusiness in the Value chain .Reach out for more details on partnerships.
+                                          </p>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                              <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <div class="row g-4">
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/39.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Are you a Community in web 3 </p>
+                                                              <a href="#" class="h6">Investa Farm is looking to partner with different web 3 communities.Reach out for more details.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/41.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Investa Farm Partnerships</p>
+                                                              <a href="#" class="h6">Looking to work with more communities as we onboard users from different communities..</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/part.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Users to Join Community groups.</p>
+                                                              <a href="#" class="h6">Are you a farm join a community group to access financing.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div  class="tab-pane fade show p-0" id="Farmers">
+                                  <div class="row g-4">
+                                      <div class="col-lg-8">
+                                          <div class="position-relative rounded overflow-hidden">
+                                              <img src="assets/img/gallery/Farmer.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                              <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                 Farmers
+                                              </div>
+                                          </div>
+                                          <div class="my-3">
+                                              <a href="#" class="h4">Its that Easy, getting agricultural financing Across the world.</a>
+                                          </div>
+                                          <p class="mt-4">We enable our Farmers easily access very low coast loans from anywhere across the world.
+                                          </p>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                              <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <div class="row g-4">
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/10.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Our B2B Financing</p>
+                                                              <a href="#" class="h6">Get access to your farming inputs through debt financing.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/12.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Value chain approach</p>
+                                                              <a href="#" class="h6">Finance your agriculture through Investa Farm &  Get access to all the way help.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+  
+                              
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/7.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Our Partners</p>
+                                                              <a href="#" class="h6">We provide you with access to a limitless opportunity through a wide range of partnerships essential for you Farm.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <script>
+                                const navLinks = document.querySelectorAll('nav a');
+                            
+                                for (const link of navLinks) {
+                                  link.addEventListener('click', (event) => {
+                                    const pageId = event.target.getAttribute('href');
+                                    const page = document.querySelector(pageId);
+                            
+                                    document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
+                                    page.style.display = 'block';
+                                  });
+                                }
+                              </script>
+
+                              <div id="Lenders" class="tab-pane fade show p-0">
+                                  <div class="row g-4">
+                                      <div class="col-lg-8">
+                                          <div class="position-relative rounded overflow-hidden">
+                                              <img src="assets/img/gallery/coins.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                              <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                  Cryptocurrency Lenders
+                                              </div>
+                                          </div>
+                                          <div class="my-3">
+                                              <a href="#" class="h4">Providing you with Access to investing in Africa's leading groups of farmers and Earning rewards</a>
+                                          </div>
+                                          <p class="mt-4">Investa Farm offers our lenders with a unique opportunity to lend and earn from their crypto at affordable rates.
+                                          </p>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                              <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                              <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <div class="row g-4">
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/IFarm.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Investa Farm IFarm token</p>
+                                                              <a href="#" class="h6">Investa Farm set to release its IFarm token early next Year.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/loans.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Crypto Lenders to earn.</p>
+                                                              <a href="#" class="h6">Investa Farm offers cryptocurrencies lenders an opportunity to lend and earn from interest.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                  <div class="row g-4 align-items-center">
+                                                      <div class="col-5">
+                                                          <div class="overflow-hidden rounded">
+                                                              <img src="assets/img/gallery/interest.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-7">
+                                                          <div class="features-content d-flex flex-column">
+                                                              <p class="text-uppercase mb-2">Crypto. Loans</p>
+                                                              <a href="#" class="h6">It is now possible to earn and lend through Investa Farm.</a>
+                                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="border-bottom mb-4">
+                              <h2 class="my-4">Activities</h2>
+                          </div>
+                          <div class="whats-carousel owl-carousel">
+                              <div class="latest-news-item">
+                                  <div class="bg-light rounded">
+                                      <div class="rounded-top overflow-hidden">
+                                          <img src="assets/img/gallery/gi.jpeg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column p-4">
+                                          <a href="#" class="h4">Investa Farm has been selected for the MEST Regional Finals Kenya in 2023.</a>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="small text-body link-hover">Community Manager</a>
+                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="whats-item">
+                                  <div class="bg-light rounded">
+                                      <div class="rounded-top overflow-hidden">
+                                          <img src="assets/img/gallery/December is here (1).png" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column p-4">
+                                          <a href="#" class="h4">Investa Farm Mobile application is set for launch before the end of the Year.</a>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="small text-body link-hover">Community Manager.</a>
+                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="whats-item">
+                                  <div class="bg-light rounded">
+                                      <div class="rounded-top overflow-hidden">
+                                          <img src="assets/img/gallery/b.jpeg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column p-4">
+                                          <a href="#" class="h4">A season before the planting season is here, for our Farmers Investa Farm offers  opportunities.</a>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="small text-body link-hover">Community Manager.</a>
+                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="whats-item">
+                                  <div class="bg-light rounded">
+                                      <div class="rounded-top overflow-hidden">
+                                          <img src="assets/img/gallery/l (6).jpeg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column p-4">
+                                          <a href="#" class="h4">Investa Farm selected for Arielle for Africa to pitch before Investors along side other Business.</a>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="small text-body link-hover">Community Manager</a>
+                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="whats-item">
+                                  <div class="bg-light rounded">
+                                      <div class="rounded-top overflow-hidden">
+                                          <img src="assets/img/gallery/k.png"  class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column p-4">
+                                          <a href="#" class="h4">Have access to our website and mobile application today and get access to unlimited opportunities.</a>
+                                          <div class="d-flex justify-content-between">
+                                              <a href="#" class="small text-body link-hover">Community Manager</a>
+                                              <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="mt-5 lifestyle">
+                              <div class="border-bottom mb-4">
+                                  <h1 class="mb-4">Upcoming Events</h1>
+                              </div>
+                              <div class="row g-4">
+                                  <div class="col-lg-6">
+                                      <div class="lifestyle-item rounded">
+                                          <img src="assets/img/gallery/gi.jpeg" class="img-fluid w-100 rounded" alt="">
+                                          <div class="lifestyle-content">
+                                             <div class="mt-auto">
+                                                  <a href="#" class="h4 text-white link-hover" style="color: black;">MEST Regional Finals.</a>
+                                                  <div class="d-flex justify-content-between mt-4">
+                                                      <a href="#" class="small text-white link-hover">Community Manager</a>
+                                                      <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                  </div>
+                                             </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="lifestyle-item rounded">
+                                          <img src="assets/img/gallery/December is here (1).png" class="img-fluid w-100 rounded" alt="">
+                                          <div class="lifestyle-content">
+                                             <div class="mt-auto">
+                                                  <a href="#" class="h4 text-white link-hover">Investa Farm Mobile application Launch is set to happen before next Year.</a>
+                                                  <div class="d-flex justify-content-between mt-4">
+                                                      <a href="#" class="small text-white link-hover">Community Manager</a>
+                                                      <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                  </div>
+                                             </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-xl-3">
+                          <div class="row g-4">
+                              <div class="col-12">
+                                  <div class="p-3 rounded border">
+                                      <h4 class="mb-4">Stay Connected</h4>
+                                      <div class="row g-4">
+                                          <div class="col-12">
+                                              <a href="https://www.facebook.com/investafarm" class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2" target="_blank">
+                                                  <i class="fa fa-facebook"></i>
+                                                 
+                                                  <span class="text-white"></span>
+                                              </a>
+                                              <a href="https://twitter.com/Investa_farm" class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2" target="_blank">
+                                                  <i class="fa fa-twitter "></i>
+                                                  <span class="text-white"></span>
+                                              </a>
+                                              <a href="https://www.linkedin.com/company/investafarm" class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2" target="_blank">
+                                                  <i class="fab fa-linkedin "></i>
+                                                  <span class="text-white"></span>
+                                              </a>
+                                              <a href="https://www.instagram.com/investa_farm/" class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2" target="_blank">
+                                                  <i class="fa fa-instagram "></i>
+                                                  <span class="text-white"></span>
+                                              </a>
+                                       
+                                          </div>
+                                      </div>
+                                      <h4 class="my-4">Popular News</h4>
+                                      <div class="row g-4">
+                                          <div class="col-12">
+                                              <div class="row g-4 align-items-center features-item">
+                                                  <div class="col-4">
+                                                      <div class="rounded-circle position-relative">
+                                                          <div class="overflow-hidden rounded-circle">
+                                                              <img src="assets/img/gallery/IFarm.png" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                          </div>
+                                                          <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                      <div class="features-content d-flex flex-column">
+                                                          <p class="text-uppercase mb-2">IFarm Token</p>
+                                                          <a href="#" class="h6">
+                                                              Our IFarm token release set for next Year release.
+                                                          </a>
+                                                          <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="row g-4 align-items-center features-item">
+                                                  <div class="col-4">
+                                                      <div class="rounded-circle position-relative">
+                                                          <div class="overflow-hidden rounded-circle">
+                                                              <img src="assets/img/gallery/interest.png" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                          </div>
+                                                          <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                      <div class="features-content d-flex flex-column">
+                                                          <p class="text-uppercase mb-2">Interest rates</p>
+                                                          <a href="#" class="h6">
+                                                              Get the best speak market, news.
+                                                          </a>
+                                                          <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="row g-4 align-items-center features-item">
+                                                  <div class="col-4">
+                                                      <div class="rounded-circle position-relative">
+                                                          <div class="overflow-hidden rounded-circle">
+                                                              <img src="assets/img/gallery/loans.png" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                          </div>
+                                                          <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                      <div class="features-content d-flex flex-column">
+                                                          <p class="text-uppercase mb-2">Loans</p>
+                                                          <a href="#" class="h6">
+                                                              We enable get the best loans to finance your agriculture.
+                                                          </a>
+                                                          <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="row g-4 align-items-center features-item">
+                                                  <div class="col-4">
+                                                      <div class="rounded-circle position-relative">
+                                                          <div class="overflow-hidden rounded-circle">
+                                                              <img src="assets/img/gallery/coins.png" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                          </div>
+                                                          <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                      <div class="features-content d-flex flex-column">
+                                                          <p class="text-uppercase mb-2">Cryptocurrencies</p>
+                                                          <a href="#" class="h6">
+                                                              Enabling you Invest your cryptocurrencies.
+                                                          </a>
+                                                          <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <a href="#" class="link-hover btn border border-primary rounded-pill text-dark w-100 py-3 mb-4">View More</a>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <div class="border-bottom my-3 pb-3">
+                                                  <h4 class="mb-0">Trending Tags</h4>
+                                              </div>
+                                              <ul class="nav nav-pills d-inline-flex text-center mb-4">
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Farmers</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">IFarm Token</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Partnerships</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Crypto. Lenders</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Loans</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">DAO'S</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Saccos</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item mb-3">
+                                                      <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                          <span class="text-dark link-hover" style="width: 90px;">Stable Coins</span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <div class="position-relative banner-2">
+                                                  <img src="assets/img/gallery/mg.jpeg" class="img-fluid w-100 rounded" alt="">
+                                                  <div class="text-center banner-content-2">
+                                                    
+                                                      <p class="text-white mb-2">News & Magazine </p>
+                                                      <a href="#" class="btn btn-primary text-white px-4">Read Now</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      <!-- Most Populer News End -->
+   
+      <!-- <section> close ============================-->
+        <section class="client_section">
+          <div class="container" id="team">
+            <div class="heading_container">
+              <h2>
+                Founding Team
+              </h2>
+            </div>
+            <div class="carousel-wrap">
+              <div class="owl-carousel">
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/a.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Moses Ochieng<br>
+                        <span>
+                          Co-Founder & Chief Executive Officer
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Moses Ochieng is a visionary leader with a passion for technology and innovation. He is the Co-Founder and Chief Executive Officer of Investa Farm, a leading provider of cryptocurrency loans. Moses has extensive experience in the technology industry, and he is a recognized expert in entrepreneurship. He is a strong advocate for using technology to solve social and economic problems.
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://www.facebook.com/ochieng.moses.77312" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/africaselonmusk" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/moses-ochieng-656b481b7/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/corrine.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Corrine Muriuki<br>
+                        <span>
+                          Co-Founder & Chief Product Officer
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Corrine Muriuki is a creative and product-driven leader with a passion for user experience. She is the Co-Founder and Chief Product Officer of Investa Farm, where she leads the development of innovative products that meet the needs of customers. Corrine has a deep understanding of user needs and a proven track record of success in developing products that people love with different loaning products like KCB Mifugo
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/corrine_nyawira" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/corrine-nyawira-muriuki/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/joseph.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Joseph Gicuguma <br>
+                        <span>
+                          Founding Team & Head of Business Development & Growth
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Joseph Gicuguma brings a wealth of experience to Investa Farm as the Head of Business Development and Growth. As a seasoned entrepreneur and founder prior to his role here, he has demonstrated exceptional skills in managing and scaling businesses.
+
+                        Before joining Investa Farm, Joseph played a pivotal role in the web 3.0 space, leveraging his expertise as a web 3 analyst. 
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/gicugumajoe_" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/joseph-gicuguma-244295200/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/wamuyu.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Wamuyu Gathigia<br>
+                        <span>
+                          Founding Team & Chief Operations Officer
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                       Wamuyu has worked as a Data scientist in different organizations including code Africa, where she was a Data instructor managing different classes across topics like Data and AI.She is a great leader and addition to the team at Investa Farm.
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/GathigiaMaureen" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/mourine-gathigia-661b711a4/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                  
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/steve.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Stephen Kimoi<br>
+                        <span>
+                          Co-Founder & Chief technology Officer
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Steve Kimoi is a full-stack blockchain developer, project manager, and entrepreneur with a passion for decentralized technologies and their potential to revolutionize industries and improve people's lives. He is has been the Project Manager for Kushite ICP.Hub East Africa, a blockchain innovation hub that is fostering the growth of the blockchain ecosystem in East Africa.
+
+
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/stevekimoi" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/stephen-kimoi/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/cindy.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Cynthia Kamau<br>
+                        <span>
+                          Founding Team & Community Manager
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Cynthia Kamau is a former Founder and AWS community Manager.Cynthia is an advocate for women in technology and their empowerment towards better and prosperous futures, she has worked in different technology communities  bringing in a tonne of experience to the team.
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/CyndieKamau" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/cynthiakamau/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="item">
+                  <div class="box">
+                    <div class="image-container">
+                      <div class="circle">
+                        <img src="assets/img/gallery/kevin.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        Kevin Owidi<br>
+                        <span>
+                          Founding Team & Head of Partnerships.
+                        </span>
+                      </h5>
+                      <img src="images/quote.png" alt="">
+                      <p>
+                        Kevin is a Sofware Engineer by profession , working for different companies in building great software systems.Kevin is also a former microsoft students lead giving him an ecosystem of partnership knowdledge to work at Investa Farm.
+                      </p>
+                      <ul class="social-icon list-inline">
+                        <li class="list-inline-item">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://twitter.com/kevinowidi_" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/kevin-owidi-08b275149/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+  <!-- end client section -->
+      <!-- ===========================================-->
+      <br>
+      <br>
+      <br>
+      <br>
+<!-- target section -->
+<section class="target_section layout_padding2" style="color: #fff;background-color:#66BB6A;">
+  <div class="container" style="background-color:#66BB6A;">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="detail-box">
+          <h2 style="color: #fff;" id="counter">
+            101
+          </h2>
+          <h5 style="color: #fff;">
+            Farmers
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="detail-box">
+          <h2 style="color: #fff;" id="counter1">
+            20
+          </h2>
+          <h5 style="color: #fff;">
+            Cryptocurrency Lenders
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="detail-box">
+          <h2 style="color: #fff;">
+            10000
+          </h2>
+          <h5 style="color: #fff;" id="counter2">
+            Loans
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="detail-box">
+          <h2 style="color: #fff;" id="counter3">
+            300
+          </h2>
+          <h5 style="color: #fff;">
+           Transactions
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const counter = document.getElementById('counter');
+
+  // Set the initial count to 0
+  let count = 0;
+
+  // Use setInterval to increment the counter every second
+  const interval = setInterval(() => {
+    count++;
+    counter.innerHTML = count;
+
+    // Stop the interval after it reaches 100
+    if (count === 100) {
+      clearInterval(interval);
+    }
+  }, 1000); // Call the function every 1000 milliseconds (1 second)
+
+</script>
+
+<!-- end target section -->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <div class="cookie-banner">
+      <p>We use cookies to improve your experience on our website. By continuing to use our website, you agree to our use of cookies.</p>
+      <button onclick="acceptCookies()">Accept Cookies</button>
+  </div>
+  <script>
+    function acceptCookies() {
+        document.cookie = "acceptedCookies=true; expires=365";
+        document.querySelector('.cookie-banner').remove();
+    }
+
+    if (document.cookie.indexOf('acceptedCookies=true') === -1) {
+        document.querySelector('.cookie-banner').style.display = 'block';
+    }
+</script>
+    <!-- ===============================================-->
+   <br>
+   <br>
+
+
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
+              <div class="block">
+                <a href="index.html"><img src="assets/img/gallery/Investa(8).png" alt="footer-logo" style="width: 120px;height:180px;"></a>
+                <!-- Social Site Icons -->
+             
+             
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+              <div class="block-2">
+                <!-- heading -->
+                <h6>Product</h6>
+                <!-- links -->
+                <ul>
+                  <li><a href="team.html">Teams</a></li>
+                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="FAQ.html">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+              <div class="block-2">
+                <!-- heading -->
+                <h6>Resources</h6>
+                <!-- links -->
+                <ul>
+                  <li><a href="sign-up.html">Singup</a></li>
+                  <li><a href="sign-in.html">Login</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+              <div class="block-2">
+                <!-- heading -->
+                <h6>Company</h6>
+                <!-- links -->
+                <ul>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="team.html">Investor</a></li>
+                  <li><a href="privacy.html">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+              <div class="block-2">
+                <!-- heading -->
+                <h6>Company</h6>
+                <!-- links -->
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+
+    <div id="newsletter-popup">
+      <img src="assets/img/gallery/m.png" alt="Company Logo" id="newsletter-popup-logo">
+
+      <div id="newsletter-popup-content">
+          <h2>Stay Updated with Our Newsletter</h2>
+          <p>Subscribe to our newsletter to receive the latest news, updates, and exclusive offers.</p>
+
+          <input type="email" id="newsletter-popup-input" placeholder="Enter your email address">
+
+          <div id="newsletter-popup-buttons">
+              <button id="newsletter-popup-button-subscribe">Subscribe</button>
+              <button id="newsletter-popup-button-exit">Exit</button>
+          </div>
+      </div>
+  </div>
+
+  <script>
+    const newsletterPopup = document.getElementById('newsletter-popup');
+    const newsletterPopupInput = document.getElementById('newsletter-popup-input');
+    const newsletterPopupButtonSubscribe = document.getElementById('newsletter-popup-button-subscribe');
+    const newsletterPopupButtonExit = document.getElementById('newsletter-popup-button-exit');
+    
+    newsletterPopupButtonSubscribe.addEventListener('click', () => {
+      const emailAddress = newsletterPopupInput.value.trim();
+    
+      if (!isValidEmailAddress(emailAddress)) {
+        alert('Invalid email address. Please enter a valid email address.');
+        return;
+      }
+    
+      // Simulate newsletter subscription process here, sending the email address to the server
+      console.log('Subscribing with email:', emailAddress);
+    
+      alert('Thank you for subscribing to Investa Farm newsletter!');
+      newsletterPopup.style.display = 'none'; // Hide the popup on successful subscription
+    });
+    
+    newsletterPopupButtonExit.addEventListener('click', () => {
+      newsletterPopup.style.display = 'none'; // Hide the popup on clicking the exit button
+    });
+    
+    function isValidEmailAddress(emailAddress) {
+      const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return regex.test(emailAddress);
+    };
+    
+    </script>
+      <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="co/lib/easing/easing.min.js"></script>
+      <script src="co/lib/waypoints/waypoints.min.js"></script>
+      <script src="co/lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <script type="text/javascript" src="Team/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="Team/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- owl carousel script 
+      -->
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        navText: [],
+        center: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    </script>
+    <!-- end owl carousel script -->
+    <!-- ===============================================-->
+    <script src="main.js"></script>
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
